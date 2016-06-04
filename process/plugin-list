@@ -1,75 +1,23 @@
-[submodule "bundle/ag.vim"]
-	path = bundle/ag.vim
-	url = https://github.com/rking/ag.vim.git
-[submodule "bundle/ctrlp.vim"]
-	path = bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
-[submodule "bundle/gundo.vim"]
-	path = bundle/gundo.vim
-	url = https://github.com/sjl/gundo.vim.git
-[submodule "bundle/neosnippet.vim"]
-	path = bundle/neosnippet.vim
-	url = https://github.com/Shougo/neosnippet.vim.git
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-[submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
-[submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
-	url = https://github.com/tpope/vim-surround.git
-[submodule "bundle/badwolf"]
-	path = bundle/badwolf
-	url = https://github.com/sjl/badwolf.git
-[submodule "bundle/Figlet.vim"]
-	path = bundle/Figlet.vim
-	url = https://github.com/vim-scripts/Figlet.vim.git
-[submodule "bundle/neocomplete.vim"]
-	path = bundle/neocomplete.vim
-	url = https://github.com/Shougo/neocomplete.vim.git
-[submodule "bundle/neosnippet-snippets"]
-	path = bundle/neosnippet-snippets
-	url = https://github.com/shougo/neosnippet-snippets
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree
-[submodule "bundle/tabular"]
-	path = bundle/tabular
-	url = https://github.com/godlygeek/tabular
-[submodule "bundle/vim-multiple-cursors"]
-	path = bundle/vim-multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors
-[submodule "bundle/FIGlet.vim"]
-	path = bundle/FIGlet.vim
-	url = https://github.com/fadein/FIGlet.vim.git
-[submodule "bundle/neoinclude.vim"]
-	path = bundle/neoinclude.vim
-	url = https://github.com/Shougo/neoinclude.vim.git
-[submodule "bundle/vimproc.vim"]
-	path = bundle/vimproc.vim
-	url = https://github.com/Shougo/vimproc.vim.git
-[submodule "bundle/context_filetype.vim"]
-	path = bundle/context_filetype.vim
-	url = https://github.com/Shougo/context_filetype.vim.git
-[submodule "bundle/neco-vim"]
-	path = bundle/neco-vim
-	url = https://github.com/Shougo/neco-vim.git
-[submodule "bundle/neopairs.vim"]
-	path = bundle/neopairs.vim
-	url = https://github.com/Shougo/neopairs.vim.git
-[submodule "bundle/neco-syntax"]
-	path = bundle/neco-syntax
-	url = https://github.com/Shougo/neco-syntax.git
-[submodule "bundle/vim-rooter"]
-	path = bundle/vim-rooter
-	url = https://github.com/airblade/vim-rooter.git
-[submodule "bundle/FastFold"]
-	path = bundle/FastFold
-	url = https://github.com/Konfekt/FastFold.git
-[submodule "bundle/molokai"]
-	path = bundle/molokai
-	url = https://github.com/tomasr/molokai.git
+url = https://github.com/rking/ag.vim.git
+url = https://github.com/kien/ctrlp.vim.git
+url = https://github.com/scrooloose/nerdtree
+url = https://github.com/scrooloose/nerdcommenter.git
+url = https://github.com/sjl/gundo.vim.git
+url = https://github.com/vim-airline/vim-airline.git
+url = https://github.com/scrooloose/syntastic.git
+url = https://github.com/tpope/vim-surround.git
+url = https://github.com/godlygeek/tabular
+url = https://github.com/fadein/FIGlet.vim.git
+url = https://github.com/Konfekt/FastFold.git
+url = https://github.com/airblade/vim-rooter.git
+url = https://github.com/Shougo/vimproc.vim.git
+url = https://github.com/Shougo/neco-vim.git
+url = https://github.com/Shougo/neco-syntax.git
+url = https://github.com/Shougo/context_filetype.vim.git
+url = https://github.com/Shougo/neoinclude.vim.git
+url = https://github.com/Shougo/neopairs.vim.git
+url = https://github.com/shougo/neosnippet-snippets
+url = https://github.com/Shougo/neosnippet.vim.git
+url = https://github.com/Shougo/neocomplete.vim.git
+url = https://github.com/sjl/badwolf.git
+url = https://github.com/tomasr/molokai.git
