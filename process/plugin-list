@@ -13,7 +13,6 @@ url = https://github.com/airblade/vim-rooter.git
 url = https://github.com/Shougo/vimproc.vim.git
 url = https://github.com/Shougo/neco-vim.git
 url = https://github.com/Shougo/neco-syntax.git
-url = https://github.com/Shougo/context_filetype.vim.git
 url = https://github.com/Shougo/neoinclude.vim.git
 url = https://github.com/Shougo/neopairs.vim.git
 url = https://github.com/shougo/neosnippet-snippets
