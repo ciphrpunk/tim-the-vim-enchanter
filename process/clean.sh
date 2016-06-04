@@ -8,5 +8,5 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
   git submodule deinit  -f $name &&\
   git rm --cached $name  &&\
   rm -r $name
-done < "./gitmodules"
-cd ../ && mv .gitmodules process/gitmodules 
+done < "./plugin-list"
+cd ../ && mv .gitmodules process/plugin-list 
