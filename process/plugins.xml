@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<Plugins>
+  <Plugin name="Ag" url="https://github.com/rking/ag.vim.git"/>
+  <Plugin name="Ctrlp" url="https://github.com/kien/ctrlp.vim.git"/>
+  <Plugin name="Nerdtree" url="https://github.com/scrooloose/nerdtree"/>
+  <Plugin name="Nerdcommenter" url="https://github.com/scrooloose/nerdcommenter.git"/>
+  <Plugin name="Gundo" url="https://github.com/sjl/gundo.vim.git"/>
+  <Plugin name="Vim Airline" url="https://github.com/vim-airline/vim-airline.git"/>
+  <Plugin name="Syntastic" url="https://github.com/scrooloose/syntastic.git"/>
+  <Plugin name="Vim Surround" url="https://github.com/tpope/vim-surround.git"/>
+  <Plugin name="Tabular" url="https://github.com/godlygeek/tabular"/>
+  <Plugin name="Figlet" url="https://github.com/fadein/FIGlet.vim.git"/>
+  <Plugin name="Fastfold" url="https://github.com/Konfekt/FastFold.git"/>
+  <Plugin name="Vim Rooter" url="https://github.com/airblade/vim-rooter.git"/>
+  <Plugin name="Vimproc" url="https://github.com/Shougo/vimproc.vim.git"/>
+  <Plugin name="Neco Vim" url="https://github.com/Shougo/neco-vim.git"/>
+  <Plugin name="Neco Syntax" url="https://github.com/Shougo/neco-syntax.git"/>
+  <Plugin name="Neoinclude" url="https://github.com/Shougo/neoinclude.vim.git"/>
+  <Plugin name="Neopairs" url="https://github.com/Shougo/neopairs.vim.git"/>
+  <Plugin name="Neosnippet Snippets" url="https://github.com/shougo/neosnippet-snippets"/>
+  <Plugin name="Neosnippet" url="https://github.com/Shougo/neosnippet.vim.git"/>
+  <Plugin name="Neocomplete" url="https://github.com/Shougo/neocomplete.vim.git"/>
+  <Plugin name="Badwolf" url="https://github.com/sjl/badwolf.git"/>
+  <Plugin name="Molokai" url="https://github.com/tomasr/molokai.git"/>
+</Plugins>

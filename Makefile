@@ -1,10 +1,14 @@
-PLUGINS = $(sort $(dir $(wildcard ../Test/*/)))
-process: ./process/process.sh
-	@mkdir bundle &&\
-		cd process &&\
-		./process.sh
+PROCESS = process/process.sh
+BUNDLE  = bundle/
+PLUGINS = ${sort ${dir ${wildcard ${BUNDLE}/*/}}}
+PLUGINNAMES = ${basename ${basename $(PLUGINS)}}
+
+install: $(PROCESS)
+	@$(PROCESS)
+process:  
+	@cd process &&\
+		./$(PROCESS)
 .PHONY: process
-all: $(process)
 clean: $(PLUGINS)
-	@rm -rf bundle/$(PLUGINS) &&\
-		echo "All plugins have been erased"
+	@echo "Removing $(PLUGINNAMES) plugins" &&\
+		rm -rf $(PLUGINS)  
