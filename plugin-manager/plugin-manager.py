@@ -78,8 +78,9 @@ def process(plugin):
     print "Name       : " + plugin['name']
     print "Clone Url  : " + plugin['url']
     sendCmd('git clone ' + plugin['url'] + " ../build/stage/.unstaged/bundle/" + plugin['name'].replace(" ", "-"))
-    sendCmd('cp -R ../build/stage/.unstaged/bundle/' + plugin['name'].replace(" ", "-") + ' /home/hdotu/.vim/bundle/')
+    sendCmd('cp -R ../build/stage/.unstaged/bundle/' + plugin['name'].replace(" ", "-") + " " + os.getenv('HOME') + '/.vim/bundle/')
     sendCmd('rm -rf ../build/stage/.unstaged/bundle/' + plugin['name'].replace(" ", "-")) 
+    sendCmd('cp ../vim.conf.d/vimrc ' + os.getenv('HOME') + '/.vimrc')
 
 def main(argv):
     updateFlag = False
