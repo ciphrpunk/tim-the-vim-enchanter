@@ -5,7 +5,7 @@ import getopt
 from xml.dom import minidom
 from urlparse import urlparse, urljoin
 from os.path import splitext, basename
-import requests, json, getpass
+import requests, json, getpass, subprocess, shlex
 
 GITHUB_API = 'https://api.github.com'
 
@@ -43,6 +43,13 @@ def getPlugin(url, token):
     except:
         print("Not Valid")
 
+def getList():
+    tree = et.parse('data/db/plugins.xml')
+    root = tree.getroot()
+    for child in root:
+        plugin = child.attrib
+        process(plugin)
+
 def checkURL(url):
     try:
         parsed = urlparse(url)
@@ -55,6 +62,24 @@ def checkURL(url):
             return False
     except:
         print("Not Valid")
+
+def sendCmd(cmd):
+    kwargs = {}
+    kwargs['stdout'] = subprocess.PIPE
+    kwargs['stderr'] = subprocess.PIPE
+    proc = subprocess.Popen(shlex.split(cmd), **kwargs)
+    (stdout_str, stderr_str) = proc.communicate()
+    if stdout_str != '':
+        print stdout_str
+    if stderr_str != '':
+        print stderr_str
+
+def process(plugin):
+    print "Name       : " + plugin['name']
+    print "Clone Url  : " + plugin['url']
+    sendCmd('git clone ' + plugin['url'] + " ../build/stage/.unstaged/bundle/" + plugin['name'].replace(" ", "-"))
+    sendCmd('cp -R ../build/stage/.unstaged/bundle/' + plugin['name'].replace(" ", "-") + ' /home/hdotu/.vim/bundle/')
+    sendCmd('rm -rf ../build/stage/.unstaged/bundle/' + plugin['name'].replace(" ", "-")) 
 
 def main(argv):
     updateFlag = False
@@ -71,7 +96,7 @@ def main(argv):
         if opt == "--update":
             updateFlag = True
         elif opt in ("-a", "--all"):
-            process(getList())
+            getList()
         elif opt in ("-n", "--name"):
             name = arg
         elif opt in ("-u", "--url"):
@@ -83,9 +108,7 @@ def main(argv):
     if updateFlag and checkURL(url):
         plugin = getPlugin(url, getToken())
 
-        print "Name       : " + plugin['name']
-        print "Description: " + plugin['description']
-        print "Clone Url  : " + plugin['clone_url']
+
 
 if __name__ == "__main__":
     main(sys.argv[1:])
