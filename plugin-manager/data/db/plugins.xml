@@ -6,6 +6,7 @@
   <Plugin name="Nerdcommenter" url="https://github.com/scrooloose/nerdcommenter.git"/>
   <Plugin name="Gundo" url="https://github.com/sjl/gundo.vim.git"/>
   <Plugin name="Vim Airline" url="https://github.com/vim-airline/vim-airline.git"/>
+  <Plugin name="Vim Airline Themes" url="https://github.com/vim-airline/vim-airline-themes.git"/>
   <Plugin name="Syntastic" url="https://github.com/scrooloose/syntastic.git"/>
   <Plugin name="Vim Surround" url="https://github.com/tpope/vim-surround.git"/>
   <Plugin name="Tabular" url="https://github.com/godlygeek/tabular"/>
